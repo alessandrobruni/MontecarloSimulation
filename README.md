@@ -5,9 +5,9 @@ The questions are classic problems in probability theory and they highlight the 
 
 1. **Losing the Bet on Rolling at Least One Six in Four Rolls of a Single Die**:
 
-   The gambler's expectation to frequently see a six in four rolls of a single die is a common misconception. The probability of NOT rolling a six in a single roll is
+   The gambler's expectation to frequently see six in four rolls of a single die is a common misconception. The probability of NOT rolling a six in a single roll is
    $(\frac{5}{6})$
-   (since there are 5 outcomes that are not six). To find the probability of not rolling a six in four consecutive rolls, we multiply the probability of not rolling a six in each roll:
+   (since 5 outcomes are not six). To find the probability of not rolling a six in four consecutive rolls, we multiply the probability of not rolling a six in each roll:
 
    $[ P(\text{No six in 4 rolls}) = \left(\frac{5}{6}\right)^4 ]$
 
@@ -19,11 +19,11 @@ The questions are classic problems in probability theory and they highlight the 
 
    $[ P(\text{At least one six in 4 rolls}) = 1 - P(\text{No six in 4 rolls}) \approx 1 - 0.482 \approx 0.518 ]$
 
-   Although this probability is slightly over 50%, it's not as high as most people intuitively expect. This is why the gambler was losing this bet more often than he anticipated.
+   Although this probability is slightly over 50%, it's not as high as most people intuitively expect. This is why the gambler lost this bet more often than anticipated.
 
 2. **Winning the Bet on Getting at Least One Double-Six in 24 Rolls of a Pair of Dice**:
 
-   For a pair of dice, the probability of NOT rolling a double-six in a single roll is $( \frac{35}{36} )$ (since there are 35 outcomes that are not a double-six out of the 36 possible outcomes).
+   For a pair of dice, the probability of NOT rolling a double-six in a single roll is $( \frac{35}{36} )$ (since 35 outcomes are not a double-six out of the 36 possible outcomes).
 
    To find the probability of not rolling a double-six in 24 rolls, we multiply the probability of not rolling a double-six in each roll:
 
@@ -41,4 +41,79 @@ The questions are classic problems in probability theory and they highlight the 
 
 ***Basically the two probabilities are the same, near 50 to 50 win lose.***
 
-Maybe human intuition about probability can often be misleading, especially in scenarios involving independent events and multiple trials.
+
+
+## Variance and standard deviation
+
+From probability theory, specifically for the **variance of a Bernoulli process**, which is a series of trials with only two possible outcomes (like win or lose in your games)
+ the variance can be calculated as:
+
+<br>
+
+$[ \text{Variance} = p \times (1 - p) ]$
+
+
+
+where $( p )$ is the probability of one of the outcomes (in this case, the probability of winning).
+
+<br>
+
+The variance in this context is a measure of how much the outcomes (win or lose) deviate from the mean (average outcome). In simpler terms, it's a way of quantifying how "spread out" the wins and losses are. If every play resulted in a win or every play resulted in a loss (no variability), the variance would be zero. The more balanced the wins and losses, the higher the variance.
+
+<br>
+
+To find the **standard deviation** from the variance simply take the square root of the variance.:
+
+<br>
+
+$[\text{Standard Deviation} = \sqrt{\text{Variance}} ]$
+
+<br>
+
+Let's calculate the exact value.
+
+
+In the first scenario for a Bernoulli distribution we have
+
+
+1.   a **mean** of $\{0.518}\$
+
+2.   the **variance** is approximately $\{0.249676}\$
+
+3.  and the **standard deviation** is approximately $\{0.499676}\$     
+
+
+<br>
+
+
+In the second scenario for a Bernoulli distribution we have
+
+
+1.   a **mean** of $\{0.491}\$
+
+2.   the **variance** is approximately $\{0.249919}\$
+
+3.  and the **standard deviation** is approximately $\{0.499919}\$     
+
+In the case of a Bernoulli distribution  a standard deviation of near $\{0.5}\$ suggests a near-equal probability of both outcomes (success and failure) meaning that  the 2 scenarios a essentially the same as flipping a coin.
+
+## Probabilities calculated with Monte Carlo method
+The Monte Carlo simulation, also known as the Monte Carlo method or multiple probability simulation, is a mathematical technique used to estimate the possible outcomes of an uncertain event.
+Regardless of the tool used, Monte Carlo techniques involve three fundamental steps:
+
+Set up the predictive model, identifying both the dependent variable that needs to be predicted and the independent variables (also known as input, risk, or predictive variables) on which the prediction will be based.
+1) Define the probability distributions of the independent variables.
+2) Perform simulations repeatedly, generating random values of the independent variables.
+3) Do this until enough results are collected to constitute a representative sample of the almost infinite number of possible combinations.
+
+   In the case of the two scenarios described above...
+
+### 1. Independent and Dependent Variables
+- **Independent Variables**: The dice rolls.
+- **Dependent Variable**: The events being bet on.
+
+### 2. Probability Distribution
+- Since these are two independent events, each with two possibilities, the distribution follows a Bernoulli distribution. Therefore, random numbers will be generated using a uniform distribution.
+
+### 3. Simulation Execution
+- The simulation is carried out 1 million (1,000,000) times.
