@@ -1,10 +1,14 @@
 package com.example.montecarlo.service;
+
+
 import java.util.Random;
 
 public class DiceGameSimulation {
 
     private static final int SIMULATIONS = 1_000_000;
     private static final Random random = new Random();
+
+
 
     public static double simulateGame1(int rolls, int targetFace) {
         int wins = 0;
