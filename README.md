@@ -101,10 +101,10 @@ In the case of a Bernoulli distribution  a standard deviation of near $\{0.5}\$ 
 The Monte Carlo simulation, also known as the Monte Carlo method or multiple probability simulation, is a mathematical technique used to estimate the possible outcomes of an uncertain event.
 Regardless of the tool used, Monte Carlo techniques involve three fundamental steps:
 
-Set up the predictive model, identifying both the dependent variable that needs to be predicted and the independent variables (also known as input, risk, or predictive variables) on which the prediction will be based.
-1) Define the probability distributions of the independent variables.
-2) Perform simulations repeatedly, generating random values of the independent variables.
-3) Do this until enough results are collected to constitute a representative sample of the almost infinite number of possible combinations.
+- Set up the predictive model, identifying both the dependent variable that needs to be predicted and the independent variables (also known as input, risk, or predictive variables) on which the prediction will be based.
+- Define the probability distributions of the independent variables.
+- Perform simulations repeatedly, generating random values of the independent variables.
+- Do this until enough results are collected to constitute a representative sample of the almost infinite number of possible combinations.
 
 In the case of the two scenarios described above...
 
