@@ -106,14 +106,21 @@ Set up the predictive model, identifying both the dependent variable that needs 
 2) Perform simulations repeatedly, generating random values of the independent variables.
 3) Do this until enough results are collected to constitute a representative sample of the almost infinite number of possible combinations.
 
-   In the case of the two scenarios described above...
+In the case of the two scenarios described above...
 
 ### 1. Independent and Dependent Variables
 - **Independent Variables**: The dice rolls.
 - **Dependent Variable**: The events being bet on.
 
 ### 2. Probability Distribution
-- Since these are two independent events, each with two possibilities, the distribution follows a Bernoulli distribution. Therefore, random numbers will be generated using a uniform distribution.
+- Random  faces at each roll will be generated using a java.util.Random class using the method nextInt(6) .
 
 ### 3. Simulation Execution
 - The simulation is carried out 1 million (1,000,000) times.
+
+
+To enhance flexibility and user interaction in the scenarios,  a very simple user-friendly web application is developed. This web application will serve as the primary interface for inputting independent variables in both scenarios. By leveraging the out-of-the-box features of the Spring Boot, we aim to create an intuitive and accessible platform. This approach not only simplifies data entry but also broadens the potential for diverse scenario analysis with ease.
+The source code an the jar file are in this repository.
+To access the simulation at localhost:8080 the application can be stated with `java -jar montecalo-0.0.1-SNAPSHOT.jar`.
+
+![picture](https://github.com/alessandrobruni/MontecarloSimulation/assets/106590540/39ea1fb1-10b6-4a3b-ad32-b29f0e4db76c)
