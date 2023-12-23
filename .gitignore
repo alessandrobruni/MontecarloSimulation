@@ -1,4 +1,4 @@
-README.md
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
@@ -31,3 +31,19 @@ build/
 
 ### VS Code ###
 .vscode/
+/.gradle/buildOutputCleanup/buildOutputCleanup.lock
+/.gradle/buildOutputCleanup/cache.properties
+/.gradle/8.5/checksums/checksums.lock
+/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock
+/.gradle/8.5/executionHistory/executionHistory.lock
+/.gradle/8.5/fileHashes/fileHashes.lock
+/.gradle/8.5/dependencies-accessors/gc.properties
+/.gradle/8.5/gc.properties
+/.gradle/vcs-1/gc.properties
+/gradle/wrapper/gradle-wrapper.jar
+/gradle/wrapper/gradle-wrapper.properties
+/.gradle/8.5/fileChanges/last-build.bin
+/.mvn/wrapper/maven-wrapper.jar
+/.mvn/wrapper/maven-wrapper.properties
+/.gradle/8.5/checksums/md5-checksums.bin
+/.gradle/8.5/checksums/sha1-checksums.bin
