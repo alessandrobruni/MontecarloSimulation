@@ -143,8 +143,9 @@ In the second scenario for a Bernoulli distribution we have
 In the case of a Bernoulli distribution  a standard deviation of near $\{0.5}\$ suggests a near-equal probability of both outcomes (success and failure) meaning that  the 2 scenarios a essentially the same as flipping a coin.
 
 ## Probabilities calculated with Monte Carlo method
+
 The Monte Carlo simulation, also known as the Monte Carlo method or multiple probability simulation, is a mathematical technique used to estimate the possible outcomes of an uncertain event.
-E very good visual concept explanation can be found here 
+E very good visual concept explanation of the randomly evolving simulation  can be found [here](https://www.youtube.com/watch?v=7ESK5SaP-bc&t=540s) .
 Regardless of the tool used, Monte Carlo techniques involve three fundamental steps:
 
 - Set up the predictive model, identifying both the dependent variable that needs to be predicted and the independent variables (also known as input, risk, or predictive variables) on which the prediction will be based.
@@ -159,7 +160,7 @@ In the case of the two scenarios described above...
 - **Dependent Variable**: The events being bet on.
 
 ### 2. Probability Distribution
-- Random  faces at each roll will be generated using a java.util.Random class using the method nextInt(6) .
+- For the Berbulli distribution the random  faces at each roll will be generated using a java.util.Random class using the method nextInt(6) .
 
 ### 3. Simulation Execution
 - The simulation is carried out 1 million (1,000,000) times.
