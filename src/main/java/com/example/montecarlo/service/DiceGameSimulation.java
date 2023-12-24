@@ -81,7 +81,11 @@ public class DiceGameSimulation {
     }
 
     /**
-     * This prints to the form
+     * This prints results to the web form.
+     *
+     * The parameter simulation is provided for possible extension of the simulation trials.
+     * The number of iterations in the form page is intentionally unchangeable, as the 1Mln amount
+     * is deemed sufficient for the purposes
      * */
     public static String showStatistics(String gameName, int simulations, double wins) {
         double mean = wins / simulations;
