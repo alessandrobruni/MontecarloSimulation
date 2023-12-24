@@ -174,7 +174,9 @@ To access the simulation at localhost:8080 the application can be stated with `j
 
 The JAR file has been compiled using Java version 11. Please keep this in mind if you encounter any issues when attempting to run it from the console.
 
-![picture](https://github.com/alessandrobruni/MontecarloSimulation/assets/106590540/39ea1fb1-10b6-4a3b-ad32-b29f0e4db76c)
+
+![picturewebapp](https://github.com/alessandrobruni/MontecarloSimulation/assets/106590540/ba67f0d8-2cbc-44cc-b67c-fa0b26649252)
+
 
 Here is a screenshot of the web app.
 
