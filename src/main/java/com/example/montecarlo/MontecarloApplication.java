@@ -17,8 +17,8 @@ public class MontecarloApplication {
         // Example parameters for Game 2: 24 rolls, target faces 6 and 6
         double payoutGame2 = simulateGame2(24, 6, 6);
 
-        printStatistics("Game 1 One Six", payoutGame1);
-        printStatistics("Game 2 Double Six", payoutGame2);
+        printStatistics("Game 1 One Dice", payoutGame1);
+        printStatistics("Game 2 Two Dices", payoutGame2);
     }
 
 }

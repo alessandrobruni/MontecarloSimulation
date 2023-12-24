@@ -2,13 +2,12 @@ package com.example.montecarlo.controller;
 
 import com.example.montecarlo.model.DiceGameForm;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.ui.Model;
 
-import static com.example.montecarlo.service.DiceGameSimulation.simulateGame1;
-import static com.example.montecarlo.service.DiceGameSimulation.simulateGame2;
-import static com.example.montecarlo.service.DiceGameSimulation.showStatistics;
+
+import static com.example.montecarlo.service.DiceGameSimulation.*;
 
 /**
  * DiceGameController is a Spring MVC controller that manages the web requests for a dice game simulation.

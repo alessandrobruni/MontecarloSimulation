@@ -22,11 +22,6 @@
             <artifactId>spring-boot-starter</artifactId>
         </dependency-->
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
 
         <!-- Spring Boot Starter Web -->
         <dependency>
@@ -46,6 +41,7 @@
         </dependency>
         <!-- Spring Boot Starter Test -->
 
+
     </dependencies>
 
     <build>
@@ -55,6 +51,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+
     </build>
 
 </project>

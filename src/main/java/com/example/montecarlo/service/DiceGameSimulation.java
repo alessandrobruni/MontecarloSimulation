@@ -69,6 +69,9 @@ public class DiceGameSimulation {
         return false;
     }
 
+    /**
+     * This prints to the console
+     * */
     public static void printStatistics(String gameName,  double wins) {
         double mean = wins / SIMULATIONS;
         double variance = mean * (1 - mean);
@@ -77,11 +80,26 @@ public class DiceGameSimulation {
         System.out.println(String.format("%s Statistics: Mean: %.5f Variance: %.5f Standard Deviation: %.5f", gameName, mean, variance, stdDeviation));
     }
 
+    /**
+     * This prints to the form
+     * */
     public static String showStatistics(String gameName, int simulations, double wins) {
         double mean = wins / simulations;
         double variance = mean * (1 - mean);
         double stdDeviation = Math.sqrt(variance);
 
-        return String.format("%s Statistics: Mean: %.5f Variance: %.5f  Standard Deviation: %.5f ", gameName, mean, variance, stdDeviation);
+        double mean_trials = simulations * mean;
+        double variance_trials = simulations * variance;
+        double stdDeviation_trials = Math.sqrt(simulations*variance);
+
+        String result = String.format(
+                "%s Statistics:\n" +
+                        "Mean: %.5f , Variance: %.5f , Standard Deviation: %.5f\n" +
+                        "| Outcome with %d trials: Mean wins : $ %,.0f , Mean losses : %,.0f , Variance: $ %,.0f , Standard Deviation: $ %,.0f  ",
+                gameName,
+                mean, variance, stdDeviation,
+                simulations, mean_trials, simulations - mean_trials, variance_trials, stdDeviation_trials
+                );
+        return result;
     }
 }
