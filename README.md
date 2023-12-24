@@ -181,8 +181,8 @@ The JAR file has been tested using Java version 11. Please keep this in mind if 
 Here is a screenshot of the web app.
 
 
-![picture](https://github.com/alessandrobruni/MontecarloSimulation/assets/106590540/28afe88f-54d1-4eee-a150-8891cdc5dc8d)
 
+![Upicture](https://github.com/alessandrobruni/MontecarloSimulation/assets/106590540/1f00661c-99f8-430d-bd38-deb7bc581bc0)
 
 
 Please note that the number of iterations is intentionally unchangeable,  as the 1Mln  amount is deemed sufficient for our purposes. However, the system is flexible, allowing for the testing of various scenarios within the games.
