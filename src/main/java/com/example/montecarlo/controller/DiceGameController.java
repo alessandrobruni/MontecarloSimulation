@@ -38,10 +38,10 @@ public class DiceGameController {
         // Call  simulation logic here and get results
 
         double resultGame1 = simulateGame1(diceGameForm.getFirstGameRolls(), diceGameForm.getFirstGameFace() );
-        model.addAttribute("resultGame1", showStatistics( "| ", diceGameForm.getIterations(),resultGame1));
+        model.addAttribute("resultGame1", showStatistics( "| ", diceGameForm.getIterations(),resultGame1).replace("\n", "<br>"));
 
         double resultGame2 = simulateGame2(diceGameForm.getSecondGameRolls(), diceGameForm.getSecondGameFace1(),diceGameForm.getSecondGameFace2() );
-        model.addAttribute("resultGame2", showStatistics( "|", diceGameForm.getIterations(),resultGame2));
+        model.addAttribute("resultGame2", showStatistics( "|", diceGameForm.getIterations(),resultGame2).replace("\n", "<br>"));
 
         return "dicegame";
     }
