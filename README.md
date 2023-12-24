@@ -91,7 +91,8 @@ $[ \text{Mean of n trials} = n \times (p) ]$
 <br>
 
 $[ \text{Variance} = p \times (1 - p) ]$
-
+<br>
+$[ \text{Variance n trials} = n p \times (1 - p) ]$
 
 
 where $( p )$ is the probability of one of the outcomes (in this case, the probability of winning).
@@ -102,11 +103,15 @@ The variance in this context is a measure of how much the outcomes (win or lose)
 
 <br>
 
-To find the **standard deviation** from the variance simply take the square root of the variance.:
+To find the **standard deviation** $(\sigma)$ from the variance simply take the square root of the variance.:
 
 <br>
 
 $[\text{Standard Deviation} = \sqrt{\text{Variance}} ]$
+
+<br>
+
+$[   \sigma \text{ n trials} = \sqrt{\text{n  (Variance)}} ]$
 
 <br>
 
@@ -129,16 +134,17 @@ In the first scenario for a Bernoulli distribution we have
 In the second scenario for a Bernoulli distribution we have
 
 
-1.   a **mean** of $\{0.491}\$
+1.   a **Mean** of $\{0.491}\$
 
-2.   the **variance** is approximately $\{0.249919}\$
+2.   the **Variance** is approximately $\{0.249919}\$
 
-3.  and the **standard deviation** is approximately $\{0.499919}\$     
+3.  and the **Standard deviation** is approximately $\{0.499919}\$     
 
 In the case of a Bernoulli distribution  a standard deviation of near $\{0.5}\$ suggests a near-equal probability of both outcomes (success and failure) meaning that  the 2 scenarios a essentially the same as flipping a coin.
 
 ## Probabilities calculated with Monte Carlo method
 The Monte Carlo simulation, also known as the Monte Carlo method or multiple probability simulation, is a mathematical technique used to estimate the possible outcomes of an uncertain event.
+E very good visual concept explanation can be found here 
 Regardless of the tool used, Monte Carlo techniques involve three fundamental steps:
 
 - Set up the predictive model, identifying both the dependent variable that needs to be predicted and the independent variables (also known as input, risk, or predictive variables) on which the prediction will be based.
