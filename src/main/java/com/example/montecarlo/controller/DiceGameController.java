@@ -10,6 +10,19 @@ import static com.example.montecarlo.service.DiceGameSimulation.simulateGame1;
 import static com.example.montecarlo.service.DiceGameSimulation.simulateGame2;
 import static com.example.montecarlo.service.DiceGameSimulation.showStatistics;
 
+/**
+ * DiceGameController is a Spring MVC controller that manages the web requests for a dice game simulation.
+ * It handles the display of the dice game form and the processing of the simulation results.
+ *
+ * The controller has two main request mappings:
+ * 1. A GetMapping for the root ("/") path that displays the dice game form.
+ * 2. A PostMapping for the "/simulate" path that processes the submitted dice game form,
+ *    simulates the dice games, and displays the results.
+ *
+ * The controller relies on a DiceGameForm object to capture user input for the simulations.
+ * It includes methods for simulating two different dice games and displaying their statistical results.
+ */
+
 @Controller
 public class DiceGameController {
 

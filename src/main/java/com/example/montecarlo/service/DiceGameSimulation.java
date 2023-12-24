@@ -3,6 +3,27 @@ package com.example.montecarlo.service;
 
 import java.util.Random;
 
+/**
+ * The DiceGameSimulation class provides methods to simulate and analyze dice games.
+ * It includes static methods to simulate two different dice games and calculate statistical results.
+ *
+ * Methods:
+ * - simulateGame1(int rolls, int targetFace): Simulates the first type of dice game where the objective is
+ *   to roll a specific target face within a given number of rolls.
+ * - playGame1(int rolls, int targetFace): Helper method for simulateGame1, conducts a single round of the first game.
+ * - simulateGame2(int rolls, int targetFace1, int targetFace2): Simulates the second type of dice game where the objective is
+ *   to roll two specific target faces within a given number of rolls.
+ * - playGame2(int rolls, int targetFace1, int targetFace2): Helper method for simulateGame2, conducts a single round of the second game.
+ * - printStatistics(String gameName, double wins): Prints the statistical results of the simulation to the console.
+ * - showStatistics(String gameName, int simulations, double wins): Returns a string with the statistical results of the simulation.
+ *
+ * Constants:
+ * - SIMULATIONS: The default number of simulations to run for each game.
+ * - random: An instance of Random to generate random faces.
+ *
+ * This class uses a Monte Carlo simulation approach to determine the likelihood of winning in each game scenario.
+ */
+
 public class DiceGameSimulation {
 
     private static final int SIMULATIONS = 1_000_000;

@@ -1,5 +1,20 @@
 package com.example.montecarlo.model;
 
+/**
+ * The DiceGameForm class represents the data model for a dice game simulation.
+ * It stores the parameters necessary to configure and execute two different types of dice games.
+ *
+ * Attributes:
+ * - iterations: The number of times the dice games are simulated.
+ * - firstGameRolls: The number of dice rolls in the first game.
+ * - firstGameFace: The number of faces on the dice used in the first game.
+ * - secondGameRolls: The number of dice rolls in the second game.
+ * - secondGameFace1: The number of faces on the first set of dice in the second game.
+ * - secondGameFace2: The number of faces on the second set of dice in the second game.
+ *
+ * The class provides getter and setter methods for each attribute to facilitate data manipulation
+ * and access throughout the application.
+ */
 
 public class DiceGameForm {
     private int iterations = 1_000_000;
