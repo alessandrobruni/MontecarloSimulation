@@ -15,6 +15,7 @@ for $1.
 - Simulate 1000000 plays of the first game: You win if you get one six in four rolls of one dice.
 - Simulate 1000000 plays of the second game: You win if you get double sixes in twenty four
 rolls of two dice.
+
 Given a payout of $1 when a win is hit calculate the:
 - Mean 
 - Variance 
@@ -74,10 +75,18 @@ The questions are classic problems in probability theory and they highlight the 
 
 
 
-## Variance and standard deviation
+## Mean,Variance and Standard deviation
 
-From probability theory, specifically for the **variance of a Bernoulli process**, which is a series of trials with only two possible outcomes (like win or lose in your games)
- the variance can be calculated as:
+From probability theory, specifically for the **variance of a Bernoulli process**, which is a series of trials with only two possible outcomes (like win or lose in these games)
+given `n` the times of the experiment, and `p` the probability of a success (or expected value), the mean can be found using the formula:
+
+<br>
+
+$[ \text{Mean} = (p) ]$ 
+<br>
+$[ \text{Mean of n trials} = n \times (p) ]$
+
+ The variance can be calculated as:
 
 <br>
 
