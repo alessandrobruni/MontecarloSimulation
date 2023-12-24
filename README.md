@@ -19,7 +19,8 @@ rolls of two dice.
 Given a payout of $1 when a win is hit calculate the:
 - Mean 
 - Variance 
-- Standard deviation 
+- Standard deviation
+  
 For each game&#39;s payouts.
 
 Be prepared to discuss the design and implementation of your solution if you move into the next
