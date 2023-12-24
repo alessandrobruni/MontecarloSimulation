@@ -70,7 +70,7 @@ The questions are classic problems in probability theory and they highlight the 
 
    $[ P(\text{At least one double-six in 24 rolls}) = 1 - P(\text{No double-six in 24 rolls}) \approx 1 - 0.509 \approx 0.491 ]$
 
-   This probability is very close to 50%. Given the large number of trials (24 rolls), it's more likely for at least one double-six to appear, explaining why the gambler seemed to win this bet more often.
+ This probability is approximately 50%, the same as the first game. With a significant number of trials - specifically 24 rolls - the likelihood of rolling at least one double-six increases, thereby explaining the gambler's frequent wins perception in this bet. However, this topic delves deeply into the realms of psychology and human behavior, which are complex and influential factors in such scenarios.
 
 ***Basically the two probabilities are the same, near 50 to 50 win lose.***
 
