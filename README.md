@@ -184,5 +184,6 @@ Here is a screenshot of the web app.
 ![picture](https://github.com/alessandrobruni/MontecarloSimulation/assets/106590540/28afe88f-54d1-4eee-a150-8891cdc5dc8d)
 
 
+
 Please note that the number of iterations is intentionally unchangeable,  as the 1Mln  amount is deemed sufficient for our purposes. However, the system is flexible, allowing for the testing of various scenarios within the games.
 
