@@ -12,8 +12,8 @@ then repeat that many times over.
 Let’s do that experiment programmatically instead.
 Simulate each game a million times and print out the wins and losses, assuming each bet was
 for $1.
-- Simulate 1000000 plays of the first game: You win if you get one six in four rolls of one dice.
-- Simulate 1000000 plays of the second game: You win if you get double sixes in twenty four
+- Simulate 1.000.000 plays of the first game: You win if you get one six in four rolls of one dice.
+- Simulate 1.000.000 plays of the second game: You win if you get double sixes in twenty four
 rolls of two dice.
 
 Given a payout of $1 when a win is hit calculate the:
