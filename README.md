@@ -169,10 +169,10 @@ In the case of the two scenarios described above...
 
 
 To enhance flexibility and user interaction in the scenarios,  a very simple user-friendly web application is developed. This web application will serve as the primary interface for inputting independent variables in both scenarios. By leveraging the out-of-the-box features of the Spring Boot, we aim to create an intuitive and accessible platform. This approach not only simplifies data entry but also broadens the potential for diverse scenario analysis with ease.
-The source code to build the jar file is in this repository.
-To access the simulation at localhost:8080 the application can be stated with `java -jar montecalo-0.0.1-SNAPSHOT.jar` .
+The source code to build the jar file is in this repository, so it is possible to download the zip file and build the project with IntelliJ for example.
+To access the simulation at localhost:8080 the application can be stated with `java -jar montecarlo-0.0.1-SNAPSHOT.jar` .
 
-The JAR file has been tested using Java version 11. Please keep this in mind if you encounter any issues when attempting to run it from the console.
+The JAR file has been tested using `Java version 11` , the `Spring version 2.7.15` . Please keep this in mind if you happen to encounter any issues when trying to run it from the console.
 
 
 ![picturewebapp](https://github.com/alessandrobruni/MontecarloSimulation/assets/106590540/ba67f0d8-2cbc-44cc-b67c-fa0b26649252)
