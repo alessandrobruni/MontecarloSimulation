@@ -1,6 +1,7 @@
 
 # Probability of One Six in 4 Roll of a Single Dice vs Double-Six in 24 Rolls of a Pair Dice
-###Code challenge
+
+### Code challenge
 
 In the 17th century, the discipline of probability theory got its start when a gambler asked a
 mathematician friend to explain some observations about dice games.
